@@ -25,6 +25,9 @@ var App = Backbone.Router.extend({
     });
 
     this.listenTo(this.nav, "link:click", function(name){
+
+      this.navigate(name);
+      
       switch(name) {
         case "products":
           this.showProducts();
@@ -41,6 +44,13 @@ var App = Backbone.Router.extend({
     // default to showing home
 
     this.showHome();
+  },
+
+
+  routes: {
+    "" : "showHome",
+    "products" : "showProducts",
+    "terms" : "showTerms"
   },
 
   showProducts: function() {
