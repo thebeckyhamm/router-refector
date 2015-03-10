@@ -1,21 +1,65 @@
-body {
-  margin: 0;
+@font-face {
+    font-family: 'ankeregular';
+    src: url('../fonts/Anke-webfont.eot');
+    src: url('../fonts/Anke-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Anke-webfont.woff2') format('woff2'),
+         url('../fonts/Anke-webfont.woff') format('woff'),
+         url('../fonts/Anke-webfont.ttf') format('truetype'),
+         url('../fonts/Anke-webfont.svg#ankeregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
 }
 
+
+body {
+  font-family: "Helvetica Neue", helvetica, arial, sans-serif;
+  margin: 0;
+  min-height: 100vh;  
+}
+
+
+h1, h2, h3 {
+  font-family: 'ankeregular';  
+}
+
+
+
 nav {
-  background: #ccc;
+  background: #AE6316;
+  font-size: 1.2rem;
   padding: 5px;
   a {
     padding: 10px;
     display: inline-block;
-    color: #334455;
+    letter-spacing: 1px;
+    color: #FEEAB5;
   }
 }
 
 .main {
-  padding: 20px;
+  //padding: 20px;
 }
 
+.home-page {
+  background-image: url("../images/whiskey.jpg");
+  min-height: 100vh;
+  padding-left: 4rem;
+  padding-top: 2rem;
+  h2 {
+    font-size: 2.5rem;
+  }
+  p {
+    font-size: 1.3rem;
+  }
+}
+
+.products-page {
+  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
 .product {
   border: 1px solid #ccc;
   width: 170px;
@@ -53,4 +97,8 @@ nav {
       color: #449689;
     }
   }
+}
+
+.terms-page {
+  padding: 1rem;
 }

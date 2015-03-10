@@ -46,7 +46,7 @@ var ProductView = Backbone.View.extend({
 
 var ProductsView = CollectionView.extend({
   itemView: ProductView,
-  className: "products"
+  className: "products-page"
 });
 
 var NavView = Backbone.View.extend({
@@ -74,6 +74,7 @@ var NavView = Backbone.View.extend({
 
 var HomeView = Backbone.View.extend({
   template: JST["home"],
+  className: "home-page",
   render: function() {
     this.$el.html(this.template());
     return this;
@@ -82,6 +83,7 @@ var HomeView = Backbone.View.extend({
 
 var TermsView = Backbone.View.extend({
   template: JST["terms"],
+  className: "terms-page",
   render: function() {
     this.$el.html(this.template());
     return this;
