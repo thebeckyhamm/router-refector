@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+}
+nav {
+  background: #ccc;
+  padding: 5px;
+}
+nav a {
+  padding: 10px;
+  display: inline-block;
+  color: #334455;
+}
+.main {
+  padding: 20px;
+}
+.product {
+  border: 1px solid #ccc;
+  width: 170px;
+  padding: 5px;
+  border-radius: 3px;
+  display: inline-block;
+  margin: 5px;
+}
+.product .name {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.product .seller-and-price {
+  margin-top: 5px;
+}
+.product .seller-and-price .seller {
+  font-size: 13px;
+  color: #999;
+  width: 75px;
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.product .seller-and-price .price {
+  font-size: 13px;
+  color: #999;
+  width: 89px;
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: right;
+  color: #449689;
+}
